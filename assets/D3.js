@@ -114,9 +114,9 @@ let charactersNames = [];
 */
 
 for (let = i = 0; i < starWarsCharacters.length; i++) {
-  const nameCharacters = starWarsCharacters[i];
-  console.log(nameCharacters.name);
-  charactersNames.push(nameCharacters.name);
+  const Characters = starWarsCharacters[i];
+  console.log(Characters.name);
+  charactersNames.push(Characters.name);
 }
 console.log(charactersNames);
 /* ESERCIZIO 3
@@ -124,6 +124,16 @@ console.log(charactersNames);
 */
 
 const femaleCharacters = [];
+
+for (let = i = 0; i < starWarsCharacters.length; i++) {
+  const Characters = starWarsCharacters[i];
+
+  if (Characters.gender === "female") {
+    femaleCharacters.push(Characters);
+  }
+}
+
+console.log(femaleCharacters);
 
 /* ESERCIZIO 4
   Crea un oggetto "eyeColor" che abbia le seguenti proprietà: blue, yellow, brown, red, blue-gray.
